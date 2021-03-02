@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #845ec2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.notificationBtn {
+  background-color: #ffffff;
+  color: #845ec2;
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.notificationBtn:focus {
+  outline: none;
+}
+
+.notificationBtn:active {
+  transform: scale(0.9);
+}
+
+#toasts {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.toast {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+}
+
+.toast.info {
+  color: orange;
+}
+.toast.success {
+  color: green;
+}
+.toast.warning {
+  color: rgb(218, 218, 108);
+}
+.toast.error {
+  color: red;
+}
